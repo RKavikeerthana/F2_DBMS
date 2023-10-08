@@ -23,25 +23,30 @@ RENAME: This is used to rename an object existing in the database.
 
 ### SQL QUERY: 
 ```
- create table student(
-  rollno char(5),
-  name varchar(20),
-  age char(5),
-  address varchar(100),
-  phoneno char(15));
+create table student(
+  2    rollno char(5),
+  3    name varchar(20),
+  4    age char(5),
+  5    address varchar(100),
+  6    phoneno char(30));
+
 ```
 ### OUTPUT:
-![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/7934746c-f747-4a2b-8d86-4aa9d14ad8ba)
+![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/b4f59913-32e1-4d7a-a015-41f702f63ce7)
+
+
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
 ```
-ALTER TABLE student
-ADD department varchar(30);
+ ALTER TABLE student
+ ADD department varchar(15);
 ```
 ### OUTPUT:
-![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/27d6d6e9-9f1e-444b-9247-9e56dfc50ce4)
+![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/0cdccb8f-16f8-4388-bdc3-dae681e29ba5)
+
+
 
 ### 3) Drop the student table
  
@@ -59,14 +64,15 @@ ADD department varchar(30);
  truncate table student;
 ```
 ### OUTPUT:
-![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/19bd5138-68ee-494f-b624-2d52308b0831)
+![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/ce1ef582-cf0e-4938-80e2-db0015a82894)
+
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
 ```
- ALTER TABLE student
-  RENAME to mystudent;
+ alter table student
+ rename to mystudent;
 ```
 ### OUTPUT:
 ![image](https://github.com/RKavikeerthana/F2_DBMS/assets/120431120/e4e7a7f7-40c1-425b-a332-ca3fb8fe79a2)
